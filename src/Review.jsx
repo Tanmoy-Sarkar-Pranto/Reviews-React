@@ -15,7 +15,7 @@ const Review = (props) => {
       props.setIndex(0)
     }
   }
-  const handleSurprize = () => {
+  const handleSurprise = () => {
     const rand = Math.round(Math.random() * (props.len - 1))
     props.setIndex(rand)
   }
@@ -36,8 +36,8 @@ const Review = (props) => {
           <FaGreaterThan className="next-btn" />
         </button>
       </div>
-      <button className="btn" onClick={handleSurprize}>
-        Surprize me
+      <button className="btn" onClick={handleSurprise}>
+        Surprise me
       </button>
     </div>
   )
